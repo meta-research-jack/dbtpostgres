@@ -1,0 +1,13 @@
+dbtpostgres:
+  target: prod
+  outputs:
+    prod:
+      type: postgres
+      driver: 'ODBC Driver 18 for SQL Server' # (The ODBC Driver installed on your system)
+      host: 192.168.2.115
+      port: 5432
+      database: postgres
+      schema: public
+      user: myusername
+      password: mypassword
+      encrypt: False
